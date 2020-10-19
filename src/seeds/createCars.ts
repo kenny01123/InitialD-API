@@ -1,7 +1,7 @@
 import { Factory, Seeder } from "typeorm-seeding";
 import { Connection } from "typeorm";
 import { Car } from "../entity/Car";
-import carList from "./carSeed.js";
+import carList from "./carSeed.json";
 
 export default class CreateCars implements Seeder {
   public async run(factory: Factory, connection: Connection): Promise<any> {

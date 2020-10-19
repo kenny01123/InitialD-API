@@ -1,4 +1,4 @@
-const carList = [ 
+[ 
   {"manufacturer": "Toyota",
    "name":"Trueno GT-APEX",
    "model":"AE86",
@@ -6,7 +6,7 @@ const carList = [
    "weight":1000,
    "engine":"1.6L 4A-GEU",
    "power": 128,
-   "torgue": 110
+   "torque": 110
 },
    {"manufacturer": "Toyota",
     "name":"Levin GT-APEX",
@@ -15,8 +15,7 @@ const carList = [
     "weight":1000,
     "engine":"1.6L 4A-GEU",
     "power": 128,
-    "torgue": 110
+    "torque": 110
  }
 ]
 
-module.exports=carList;

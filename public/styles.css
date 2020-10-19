@@ -1,3 +1,32 @@
 body {
-    background-color: lightblue;
+    background-color: #131313;
   }
+
+
+#nav {
+  display: block;
+  width:500px;
+  height:200px;
+  justify-content: center;
+  margin:auto;
+  margin-top:10%;
+}
+
+#input {
+  display: block;
+  font-size:11px;
+  padding:4px 2px;
+  border:solid 1px #aacfe4;
+  width:300px;
+  margin:2px 0 20px 10px;
+}
+
+.button {
+  width:30px;
+  height:20px;
+  font-size:11px;
+  text-align: center;
+  width:100px;
+  justify-content: center;
+  margin-left:22%;
+}
