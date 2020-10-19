@@ -24,7 +24,9 @@
       "dev": "ts-node-dev app.ts",
       "orm": "ts-node -r dotenv/config ./node_modules/typeorm/cli.js --config ormconfig.ts",
       "makeMigrations": "yarn orm migration:generate",
-      "migrate": "yarn orm migration:run"
+      "migrate": "yarn orm migration:run",
+      "seeder": "ts-node -r dotenv/config ./node_modules/typeorm-seeding/dist/cli.js",
+      "seed": "yarn seeder --configName ./ormconfig.ts seed"
    },
    "main": "index.js",
    "license": "MIT"

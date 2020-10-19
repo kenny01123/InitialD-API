@@ -14,12 +14,9 @@ export={
    migrations: [
       "src/migration/**/*.ts"
    ],
-   subscribers: [
-      "src/subscriber/**/*.ts"
-   ],
    cli: {
       entitiesDir: "src/entity",
-      migrationsDir: "src/migration",
-      subscribersDir: "src/subscriber"
-   }
+      migrationsDir: "src/migration"
+   },
+   seeds: ["src/seeds/**/*{.ts,.js}"]
 }
