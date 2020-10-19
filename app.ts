@@ -1,28 +1,30 @@
 import express = require('express');
-import { Router } from "express";
-import { getRepository } from "typeorm";
-import { Car } from "entity/Car";
+import { AdvancedConsoleLogger, getRepository } from "typeorm";
+import { Car } from "./src/entity/Car";
 import {Request, Response} from "express";
-
-// create and setup express app
-
-const app = express();
-app.use(express.json());
-app.use(express.static('public'));
+import {createConnection} from "typeorm";
 
 
-// register routes
+createConnection().then(connection => {
+    // create and setup express app
+    const app = express();
+    app.use(express.json());
+    app.use(express.static('public'));
+    const carRepository = connection.getRepository(Car);
 
-app.get("/users", function(req: Request, res: Response) {
-    // here we will have logic to return all users
-    console.log("hi!");
-    res.send("hi!");
-});
+    // register routes
+    app.get("/api/car", async function(req: Request, res: Response) {
+        console.log(carRepository.find());
+        const result= await carRepository.find();
+        res.send(result);
+    });
 
+    app.get("/api/cars/:", async function(req: Request, res: Response) {
+        console.log(carRepository.find());
+        const result= await carRepository.find();
+        res.send(result);
+    });
 
-// start express server
-
-
-app.listen(3000, ()=> {
-    console.log("listening at port 3000")
+    // start express server
+    app.listen(3000, ()=> {console.log("server listening at port 3000")});
 });

@@ -2,20 +2,22 @@
   {"manufacturer": "Toyota",
    "name":"Trueno GT-APEX",
    "model":"AE86",
+   "layout":"FR",
    "year":1984,
    "weight":1000,
    "engine":"1.6L 4A-GEU",
    "power": 128,
-   "torque": 110
+   "torque": "110lb/ft @ 5200rpm"
 },
    {"manufacturer": "Toyota",
     "name":"Levin GT-APEX",
     "model":"AE86",
+    "layout":"FR",
     "year":1984,
     "weight":1000,
     "engine":"1.6L 4A-GEU",
     "power": 128,
-    "torque": 110
- }
+    "torque": "110lb/ft @ 5200rpm"
+   }
 ]
 
