@@ -5,11 +5,12 @@ body {
 
 #nav {
   display: block;
-  width:500px;
-  height:200px;
+  width:300px;
+  height:400px;
   justify-content: center;
   margin:auto;
   margin-top:10%;
+  margin-left:30%;
 }
 
 #input {
@@ -29,4 +30,23 @@ body {
   width:100px;
   justify-content: center;
   margin-left:22%;
+}
+
+#buttonDiv {
+  margin-left:20%
+}
+
+p{
+  color:white;
+  font-size:12px;
+}
+
+#name {
+  margin-left:29%
+
+}
+
+#link {
+  font-size:12px;
+  margin-left:32%;
 }

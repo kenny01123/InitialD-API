@@ -10,8 +10,23 @@
     <div id="nav">
         <img src="APIlogo.png" id="logo" alt="logo" width="300" >
         <input type="text" id="input" value="/api/" />
+       <div id="buttonDiv">
         <input type="button" value="Get Data!" class="button" id="getButton"/>
-
+        <input type="button" value="Post Data!" onclick="post();" class="button" id="postButton"/>
+        <form method="POST" id="patchForm">
+            <input type="hidden" name="_method" value="PATCH">
+            <button type="submit" class="button"  
+            onclick="patch();" id="patchButton" >Patch Data!</button>
+          </form>
+        <form method="POST" id="deleteForm">
+            <input type="hidden" name="_method" value="DELETE">
+            <button type="submit" class="button"  
+            onclick="remove();" id="deleteButton" >Delete Data!</button>
+          </form>
+          <p>**power is in bhp, while torque is in lb.ft</p>
+          <p id ="name">by Kenny Ng</p>
+          <a id="link" href="https://github.com/kenny01123/InitialD-API">My Github</a>
+        </div>
     </div>
 </body>
 <link href="./styles.css" rel="stylesheet">

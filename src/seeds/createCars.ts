@@ -1,10 +1,9 @@
 import { Factory, Seeder } from "typeorm-seeding";
 import { Connection } from "typeorm";
 import { Manufacturer } from "../entity/Manu";
-//import { Car } from "../entity/Car";
+import { Car } from "../entity/Car";
 
 import carList from "./carSeed.json";
-import carList2 from "./carSeed2.json";
 import manuList from "./manuSeed.json";
 
 
